@@ -42,32 +42,21 @@ a {
     width: 100%;
 }
 
-.contact {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    float:right; 
-    margin: 15px;
-    margin-top: 25px;
+.footer-icon {
+    color: aliceblue;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#footer img:hover {
-    opacity: 100%;
-    background-color: black;
-}
-
-#about {
-    
-}
-
-.me {
-    width: 350px;
+.footer-icon:hover {
+    color: darkcyan;
 }
 
 .icon-bar {
     background-color: aliceblue;
 }
 
-.nav-inlinebutton {
-    display: inline-block;
+.footer-contact {
+    float: right;
+    margin: 30px;
 }

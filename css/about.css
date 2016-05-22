@@ -9,6 +9,10 @@ h1 {
     color: aliceblue;
 }
 
+h2 {
+    font-size: 50px;
+}
+
 .aboutpicture {
     display: inline-block;
     vertical-align: top;
@@ -19,7 +23,8 @@ h1 {
     display: inline-block;
     vertical-align: top;
     margin: 5px;
-    margin-top: 40px;
+    margin-left: 50px;
+    margin-top: 0px;
     font-size: 25px;
     text-align: center
 }
@@ -27,8 +32,29 @@ h1 {
 #contact {
     text-align: center;
     font-family: Gill Sans MT;
+    margin-bottom: 20px;
 }
 
 #contact p {
     font-size: 30px;
+}
+
+.contact-icon {
+    display: inline-block;
+    color: rgb(84,95,109);
+    width: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social {
+    text-align: center;
+}
+
+.contact-icon:hover {
+    color: darkcyan;
+}
+
+.me {
+    width: 350px;
 }
