@@ -1,0 +1,73 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-color: rgb(233,233,233);
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+a {
+    color: aliceblue;
+    font-family: Gill Sans MT;
+    font-size: 21px;
+    width: 150px;
+    text-align: center;
+}
+
+
+#header {
+    height: 100px;
+}
+
+#header-name {
+    padding-top: 10px;
+}
+
+#navbar {
+    background-color: rgb(84,95,109);
+}
+
+.nav {
+    float: right;
+}
+
+#footer {
+    background-color: rgb(52,58,65);
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    float:right; 
+    margin: 15px;
+    margin-top: 25px;
+}
+
+#footer img:hover {
+    opacity: 100%;
+    background-color: black;
+}
+
+#about {
+    
+}
+
+.me {
+    width: 350px;
+}
+
+.icon-bar {
+    background-color: aliceblue;
+}
+
+.nav-inlinebutton {
+    display: inline-block;
+}

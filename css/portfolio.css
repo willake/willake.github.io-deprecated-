@@ -1,0 +1,18 @@
+#main {
+    height: 640px;
+    background-color: rgb(84,95,109);
+    text-align: center;
+}
+
+.portfolio {
+    display: inline-block;
+    width: 500px;
+    height: 250px;
+    margin: 10px;
+}
+
+#main h1{
+    font-family: Gill Sans MT;
+    font-size: 60px;
+    color: aliceblue;
+}
