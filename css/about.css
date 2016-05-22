@@ -2,6 +2,9 @@
     font-family: Gill Sans MT;
 }
 
+#about p {
+}
+
 h1 {
     text-align: center;
     font-size: 60px;
@@ -11,6 +14,7 @@ h1 {
 
 h2 {
     font-size: 50px;
+    color: darkcyan;
 }
 
 .aboutpicture {
@@ -23,10 +27,10 @@ h2 {
     display: inline-block;
     vertical-align: top;
     margin: 5px;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 0px;
-    font-size: 25px;
-    text-align: center
+    font-size: 23px;
+    text-align: center;
 }
 
 #contact {
