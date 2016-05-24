@@ -16,3 +16,14 @@
     font-size: 60px;
     color: aliceblue;
 }
+
+@media screen and (max-width:767px) {
+    #main h1 {
+        font-size: 35px;
+    }
+    
+    .portfolio {
+        width: 300px;
+        height: 150px;
+    }
+}

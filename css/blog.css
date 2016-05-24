@@ -41,3 +41,9 @@ hr {
 .article-bottom {
     height: 20px;
 }
+
+@media screen and (max-width:767px) {
+    .article-title {
+        font-size: 30px;
+    }
+}

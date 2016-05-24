@@ -5,7 +5,7 @@
 .article-content {
     margin: 20px;
     text-align: left;
-    text-indent: 50px;;
+    text-indent: 50px;
 }
 
 .article-content-tw {
@@ -43,4 +43,30 @@
     color: aliceblue;
     padding: 5px;
     font-size: 10px;
+}
+
+@media screen and (max-width:767px) {
+    .article-title {
+        font-size: 30px;
+    }
+    
+    .article-date {
+        font-size: 15px;
+    }
+    
+    .article-bottom {
+        margin-bottom: 20px;
+    }
+    
+    .article-content {
+        font-size: 16px;
+    }
+    
+    .article-content-tw {
+        font-size: 13px;
+    }
+    
+    .article-back {
+        font-size: 20px;
+    }
 }
