@@ -12,10 +12,14 @@ hr {
     padding: 20px;
 }
 
-.article-title {
+.article-title{
     font-size: 35px;
     color:rgb(22, 160, 133);
     font-weight: 700;
+}
+
+.article-title a{
+    color:rgb(22, 160, 133);
 }
 
 .article-content {
@@ -43,7 +47,11 @@ hr {
 }
 
 @media screen and (max-width:767px) {
-    .article-title {
+    .article-title{
         font-size: 30px;
+    }
+
+    .article-content {
+        font-size: 15px;
     }
 }
