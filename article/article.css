@@ -1,0 +1,45 @@
+.article-title {
+    margin-bottom: 20px;
+}
+
+.article-content {
+    margin: 20px;
+    text-align: left;
+    text-indent: 50px;;
+}
+
+.article-content-tw {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.article-date {
+    font-size: 20px;
+}
+.article-bottom {
+    margin: 20px;
+}
+
+.article-back {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.article-back a {
+    background-color: rgb(84,95,109);
+    color: aliceblue;
+    padding: 10px;
+}
+
+.TW {
+    float: right;
+}
+
+.TW a {
+    background-color: rgb(84,95,109);
+    color: aliceblue;
+    padding: 5px;
+    font-size: 10px;
+}

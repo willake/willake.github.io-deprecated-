@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+}
+
+hr {
+    border-width: 3px;
+    border-color: black;
+}
+
+.article {
+    background-color: rgba(52,58,65,0.1);
+    padding: 20px;
+}
+
+.article-title {
+    font-size: 40px;
+    color:rgb(22, 160, 133);
+    font-weight: 700;
+}
+
+.article-content {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.article-date {
+    display: inline-block;
+    font-size: 15px;
+    float: left;
+    margin: 5px;
+}
+
+.read-more {
+    display: inline-block;
+    color: black;
+    float: right;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.article-bottom {
+    height: 20px;
+}
