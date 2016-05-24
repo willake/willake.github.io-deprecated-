@@ -12,14 +12,23 @@ body {
     background-color: rgb(233,233,233);
     height: 100%;
     margin-bottom: 100px;
+    font-family: "Gill Sans MT",微軟正黑體;
 }
 
-a {
+.navbar a {
     color: aliceblue;
-    font-family: Gill Sans MT;
+    font-family: Gill Sans MT,微軟正黑體;
     font-size: 21px;
     width: 150px;
     text-align: center;
+}
+
+.navbar a:hover {
+    -webkit-animation-name: navbar-hover; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: navbar-hover;
+    animation-duration: 1s;
+    color: black;
 }
 
 
@@ -55,6 +64,10 @@ a {
 
 .footer-icon:hover {
     color: darkcyan;
+    -webkit-animation-name: icon-hover; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: icon-hover;
+    animation-duration: 1s;
 }
 
 .icon-bar {
@@ -64,4 +77,36 @@ a {
 .footer-contact {
     float: right;
     margin: 30px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes navbar-hover {
+    from {background-color:rgb(84,95,109); color:aliceblue;}
+    to { color: black;}
+}
+
+@-webkit-keyframes icon-hover {
+    from {color:aliceblue;}
+    to { color: darkcyan;}
+}
+
+@keyframes contact-icon-hover {
+    from {color:rgb(84,95,109);}
+    to { color: darkcyan;}
+}
+
+/* Standard syntax */
+@keyframes navbar-hover {
+    from {background-color:rgb(84,95,109); color:aliceblue;}
+    to { color: black;}
+}
+
+@keyframes icon-hover {
+    from {color:aliceblue;}
+    to { color: darkcyan;}
+}
+
+@keyframes contact-icon-hover {
+    from {color:rgb(84,95,109);}
+    to { color: darkcyan;}
 }

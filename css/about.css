@@ -1,8 +1,5 @@
 #about div {
-    font-family: Gill Sans MT;
-}
-
-#about p {
+    font-family: Gill Sans MT,微軟正黑體;
 }
 
 h1 {
@@ -57,6 +54,10 @@ h2 {
 
 .contact-icon:hover {
     color: darkcyan;
+    -webkit-animation-name: contact-icon-hover; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: contact-icon-hover;
+    animation-duration: 1s;
 }
 
 .me {
