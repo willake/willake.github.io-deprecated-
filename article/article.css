@@ -3,6 +3,7 @@
 }
 
 .article-content {
+    font-weight: 500;
     margin: 20px;
     text-align: left;
     text-indent: 50px;
