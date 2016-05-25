@@ -209,4 +209,15 @@ body {
     #mynavbar a {
         width:100%;
     }
+    
+    #header {
+    height: 90px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    
+    #header {
+    height: 60px;
+    }
 }

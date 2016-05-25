@@ -5,7 +5,7 @@
 
 
 <head>
-    <title>Hui-En "Willake" Lin</title>
+    <title>Website Opened!</title>
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
@@ -65,16 +65,18 @@
                     And...actually, this website haven't done yet.
                     So if you got some comments or ideas.
                     Please send a email to me and i will put your comments to the bottom of the article or just add my Facebook or Skpye account.
-                    I'll be glad to make new friends :). We can play games together or talk about interesting things.
+                    I'll be glad to make new friends. :) We can play games together or talk about interesting things.
                     I'll keep updating some new features like comment and styles make my website more good looking.<br>
                 </p>
                <p class="article-content">
                    This website is hosted on Github, you can see all of html and css code of my website there. And if you 
                    would like to know more about me. Plz click ABOUT on the navbar or <a href="/about.html">Here</a>.
                </p>
-               <p class="article-content">Hope you like my website and keep following me :) </p>
+               <p class="article-content">Hope you like my website and keep following me. :) </p>
             </div>
             <div class="article-back"><a href="/blog.html">Back To The Blog</a></div>
+            
+            <div id="disqus_thread"></div>
         </div><!-- End Container -->
     </div><!-- End Main -->
     
@@ -90,7 +92,28 @@
     <script src="/js/jquery-1.12.0.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/foundation.js"></script>
+    <script id="dsq-count-scr" src="//willake.disqus.com/count.js" async></script>
     
+    <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+
+                s.src = '//willake.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
     
 
 </body>
