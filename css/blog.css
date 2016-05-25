@@ -10,6 +10,7 @@ hr {
 .article {
     background-color: rgba(52,58,65,0.1);
     padding: 20px;
+    font-weight: 600;
 }
 
 .article-title{
@@ -52,6 +53,15 @@ hr {
     }
 
     .article-content {
-        font-size: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .article-date {
+        font-size: 12px;
+    }
+    
+    .read-more {
+        font-size:15px;
     }
 }

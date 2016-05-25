@@ -1,5 +1,5 @@
 #about div {
-    font-family: Gill Sans MT,微軟正黑體;
+    font-family: "Lato",微軟正黑體;
 }
 
 h1 {
@@ -31,8 +31,10 @@ h2 {
 }
 
 #contact {
+    font-family: "Lato",微軟正黑體;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 #contact p {
@@ -51,6 +53,14 @@ h2 {
     text-align: center;
 }
 
+.social i {
+        font-size: 60px;
+    }
+    
+    #contact i {
+        font-size: 60px;
+    }
+
 .contact-icon:hover {
     color: darkcyan;
     -webkit-animation-name: contact-icon-hover; /* Chrome, Safari, Opera */
@@ -63,7 +73,7 @@ h2 {
     width: 350px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1267px) {
     h1 {
         font-size: 40px;
     }
@@ -81,7 +91,24 @@ h2 {
         width: 50px;
     }
     
+    .social i {
+        font-size: 45px;
+    }
+    
+    #contact i {
+        font-size: 50px;
+    }
+    
     #contact p {
         font-size: 21px;
+    }
+    
+    .aboutpicture,.aboutinfo{
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .me {
+        position:relative;
     }
 }

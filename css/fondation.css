@@ -1,6 +1,7 @@
 @font-face {
     font-family: Gill Sans MT;
-    src:　url(/font/GIL_____.TTF);
+    src:　url(font/GIL_____.TTF) format("opentype"),
+    
 }
 
 html {
@@ -12,12 +13,12 @@ body {
     background-color: rgb(233,233,233);
     height: 100%;
     margin-bottom: 100px;
-    font-family: "Gill Sans MT",微軟正黑體;
+    font-family: "Lato",微軟正黑體;
 }
 
 .navbar a {
     color: aliceblue;
-    font-family: Gill Sans MT,微軟正黑體;
+    font-family: Gill Sans MT,"Lato",微軟正黑體;
     font-size: 21px;
     width: 150px;
     text-align: center;
@@ -38,6 +39,10 @@ body {
 
 #header-name {
     padding-top: 10px;
+}
+
+#header-name a {
+    float: left;
 }
 
 #navbar {
@@ -77,6 +82,10 @@ body {
 .footer-contact {
     float: right;
     margin: 30px;
+}
+
+.footer-contact i{
+    font-size: 40px;
 }
 
 /* Chrome, Safari, Opera */
