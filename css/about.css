@@ -110,5 +110,6 @@ h2 {
     
     .me {
         position:relative;
+        width: 200px;
     }
 }
