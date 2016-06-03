@@ -20,39 +20,44 @@
 <body>
     <div id="header"><!-- Header -->
       <div id="header-name">
-          <a href="index.html"><img src="img/LOGO.png" class="img-responsive" alt="Hui-En Willake Lin" width="800"></a>
+          <a href="index.html"><img src="img/LOGO.png" class="img-responsive" alt="Hui-En Willake Lin" width="700"></a>
+          
       </div>
+          <nav class="navbar" id="navbar" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" id="nav-button" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="resume.html">Résumé</a></li>
+                        <li><a href="about.html#contact">CONTACT</a></li>
+                    </ul>
+                </div><!-- End Mynavbar -->
+            </div><!-- End Container -->
+        </nav><!-- End Navbar -->
     </div><!-- End Header -->
-    
-    <nav class="navbar" id="navbar" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" id="nav-button" data-toggle="collapse" data-target="#mynavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-           
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="resume.html">Résumé</a></li>
-                    <li><a href="about.html#contact">CONTACT</a></li>
-                </ul>
-            </div><!-- End Mynavbar -->
-        </div><!-- End Container -->
-    </nav><!-- End Navbar -->
+
     
     <div id="main">
         <div class="container">
             <h1>Individual Works</h1>
-            <a><img src="img/portfilio_1.jpg" class="img-responsive img-rounded portfolio" alt="I just want to cook"></a>
-            <a><img src="img/portfilio_2.jpg" class="img-responsive img-rounded portfolio" alt="Escape the room"></a>      
+            <div class="portfolio">
+            <a href="portfolio/I-just-want-to-cook.html"><img src="img/portfilio_1.jpg" class="img-responsive img-rounded" alt="I just want to cook"></a>
+            </div>
+            <div class="portfolio">
+            <a href="portfolio/escape--the-room.html"><img src="img/portfilio_2.jpg" class="img-responsive img-rounded" alt="Escape the room"></a>  
+            </div>    
         </div>
     </div>
     

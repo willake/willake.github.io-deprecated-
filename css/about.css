@@ -1,17 +1,26 @@
-#about div {
+/*---About---*/
+
+.about {
     font-family: "Lato",微軟正黑體;
+    text-align: center;
+    font-weight: 600;
 }
 
-h1 {
+.about h1 {
     text-align: center;
     font-size: 60px;
     background-color: rgb(84,95,109);
     color: aliceblue;
+    padding-bottom: 10px;
 }
 
-h2 {
+.about h2 {
     font-size: 50px;
     color: darkcyan;
+}
+
+.about p {
+        font-size: 23px;
 }
 
 .aboutpicture {
@@ -30,14 +39,19 @@ h2 {
     text-align: center;
 }
 
-#contact {
-    font-family: "Lato",微軟正黑體;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 600;
+.me {
+    width: 350px;
 }
 
-#contact p {
+/*---About---*/
+
+/*---Contact---*/
+
+.contact {
+    margin-bottom: 20px;
+}
+
+.contact p{
     font-size: 30px;
 }
 
@@ -57,7 +71,7 @@ h2 {
         font-size: 60px;
     }
     
-    #contact i {
+.contact i {
         font-size: 60px;
     }
 
@@ -68,17 +82,16 @@ h2 {
     animation-name: contact-icon-hover;
     animation-duration: 1s;
 }
+/*---Contact---*/
 
-.me {
-    width: 350px;
-}
+/*---When screen become smaller---*/
 
 @media screen and (max-width:1267px) {
-    h1 {
+    .about h1 {
         font-size: 40px;
     }
     
-    h2 {
+    .about h2 {
         font-size: 23px;
         font-weight: 600;
     }
@@ -95,11 +108,11 @@ h2 {
         font-size: 45px;
     }
     
-    #contact i {
+    .contact i {
         font-size: 50px;
     }
     
-    #contact p {
+    .contact p {
         font-size: 21px;
     }
     
@@ -113,3 +126,5 @@ h2 {
         width: 200px;
     }
 }
+
+/*---When screen become smaller---*/

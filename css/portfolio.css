@@ -1,6 +1,11 @@
+/*---portfolio---*/
 #main {
-    height: 640px;
-    background-color: rgb(84,95,109);
+    text-align: center;
+}
+
+h1 {
+    font-family: Gill Sans MT,"Lato";
+    font-size: 60px;
     text-align: center;
 }
 
@@ -11,14 +16,82 @@
     margin: 10px;
 }
 
-#main h1{
-    font-family: Gill Sans MT,"Lato";
-    font-size: 60px;
-    color: aliceblue;
+/*---portfolio---*/
+
+/*---portfolio page---*/
+
+hr{
+    border-color: black;
+    border-width: 4px;
 }
 
+#portfolio-header h1{
+    color: black;
+}
+
+.main-picture {
+    margin: 30px;
+    margin-right: 50px;
+    width: 500px;
+}
+
+.main-info {
+    width: 500px;
+    text-align: left;
+}
+
+.main-info h1{
+    margin: 5px;
+    text-align:;
+    font-size: 50px;
+    color: black;
+}
+
+.main-info ul {
+    float: right;
+    margin: 5px;
+    margin-top: 20px;
+    margin-right: 80px;
+    font-size: 24px;
+}
+
+p {
+ font-size: 25px;   
+}
+
+#overview h1{
+    margin: 30px;
+    font-size: 50px;
+    color: black;
+}
+
+.overview-pic {
+    margin: 20px;
+    width: 450px;
+}
+
+.download {
+    margin-bottom: 30px;
+}
+
+.download h1 {
+    font-size: 50px;
+    margin: 30px;
+    color: black;
+}
+
+.download a{
+    background-color: rgb(52,58,65);
+    color: aliceblue;
+    padding: 10px;
+    margin: 40px;
+    font-size: 30px;
+}
+
+/*---portfolio page---*/
+
 @media screen and (max-width:767px) {
-    #main h1 {
+    h1 {
         font-size: 35px;
     }
     

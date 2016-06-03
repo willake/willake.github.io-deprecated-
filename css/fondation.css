@@ -1,3 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: auto;
+    height: auto;
+}
+
 @font-face {
     font-family: Gill Sans MT;
     src:　url(font/GIL_____.TTF) format("opentype"),
@@ -12,50 +22,28 @@ html {
 body {
     background-color: rgb(233,233,233);
     height: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     font-family: "Lato",微軟正黑體;
 }
 
-.navbar a {
-    color: aliceblue;
-    font-family: Gill Sans MT,"Lato",微軟正黑體;
-    font-size: 21px;
-    width: 150px;
-    text-align: center;
+#main {
+    padding-top: 60px;
 }
 
-.navbar a:hover {
-    -webkit-animation-name: navbar-hover; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
-    animation-name: navbar-hover;
-    animation-duration: 1s;
-    color: black;
-}
-
+/*---Header---*/
 
 #header {
     height: 100px;
+    background-color: rgb(233,233,233);
 }
 
-#header-name {
-    padding-top: 10px;
-}
+/*---Header---*/
 
-#header-name a {
-    float: left;
-}
-
-#navbar {
-    background-color: rgb(84,95,109);
-}
-
-.nav {
-    float: right;
-}
+/*---Footer---*/
 
 #footer {
     background-color: rgb(52,58,65);
-    height: 100px;
+    height: 80px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -81,12 +69,16 @@ body {
 
 .footer-contact {
     float: right;
-    margin: 30px;
+    margin: 20px;
 }
 
 .footer-contact i{
     font-size: 40px;
 }
+
+/*---Footer---*/
+
+/*---Animation---*/
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes navbar-hover {
@@ -120,7 +112,33 @@ body {
     to { color: darkcyan;}
 }
 
-/*--NAVBAR--*/
+/*---Animation---*/
+
+/*--Navbar--*/
+
+.navbar a {
+    color: aliceblue;
+    font-family: Gill Sans MT,"Lato",微軟正黑體;
+    font-size: 21px;
+    width: 150px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    -webkit-animation-name: navbar-hover; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: navbar-hover;
+    animation-duration: 1s;
+    color: black;
+}
+
+#navbar {
+    background-color: rgb(84,95,109);
+}
+
+.nav {
+    float: right;
+}
 
 #nav-button {
   height: 30px;
@@ -194,8 +212,10 @@ body {
   left: 50%;
 }
 
+/*---Navbar---*/
 
-/*---Mobile---*/
+/*---When screen become smaller---*/
+
 @media screen and (max-width:767px) {
     #mynavbar {
         float: left;
@@ -221,3 +241,5 @@ body {
     height: 60px;
     }
 }
+
+/*---When screen become smaller---*/
