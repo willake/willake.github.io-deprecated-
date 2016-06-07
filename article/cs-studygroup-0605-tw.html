@@ -86,7 +86,7 @@
                 <h4>string 字串前的前置符號 @</h4>
                 <p class="article-content-tw">
                     可能有不少人在寫 C# 程式的時候會需要將路徑存到string內放著，但因為在字串之中不能直接使用「\」這樣的符號，<br>
-                    會被當成是跳脫字元來處理，所謂的跳脫字元就是像是「\n」(換行)，「\t」(水平方向tab)之類的東西，假如，<br>今天在 D 碟的 Willake 資料夾裡有個檔案叫 lion.jpg，我們想把這個路徑存到 string 裡，我們宣告了一個 string，如果寫成
+                    會被當成是跳脫字元來處理，所謂的跳脫字元就是像是「\n」(換行)，「\t」(水平方向tab)之類的東西，假如，<br>今天在 D 碟的 Willake 資料夾裡有個檔案叫 Lion.jpg，我們想把這個路徑存到 string 裡，我們宣告了一個 string，如果寫成
                 </p>
                <pre class="prettyprint linenums">string path = "D:\Willake\Lion.jpg";</pre>
                <p class="article-content-tw">
@@ -97,7 +97,7 @@
                    看起來很麻煩，如果我今天複製了一個路徑我還要特別手動去把每一個「\」多加一個「\」，
                    但其實只要在雙引號前加上「@」
                </p>
-               <pre class="prettyprint linenums">string path = @"D:\Willake\lion.jpg";</pre>
+               <pre class="prettyprint linenums">string path = @"D:\Willake\Lion.jpg";</pre>
                <p class="article-content-tw">
                    就不會有問題了，但如果你的字串內還會需要用到像是「\n」之類的東西，記得要拿出來另外寫，<br>
                    因為所有的跳脫字元都會被忽略掉當成一般的字，這方法還有一些其他的用途像是假如今天你要將一段文字或是 SQL 或是 javascript 語法<br>存進 string 裡面，你就必須要使用到一堆的「+」和「&」符號，或是把整段文字變成一行甚至影響到執行的效能，<br>但只要使用「@」之後就很方便了。
