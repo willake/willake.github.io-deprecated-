@@ -237,12 +237,20 @@ body {
     #header {
     height: 90px;
     }
+    
+    #header-name {
+    width: auto;
+    }
 }
 
 @media screen and (max-width:520px) {
     
     #header {
     height: 60px;
+    }
+    
+    #header-name {
+    width: auto;
     }
 }
 
