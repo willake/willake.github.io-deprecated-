@@ -101,4 +101,8 @@
     .article-back {
         font-size: 20px;
     }
+    
+    .article-img {
+        margin: 0px;
+    }
 }
