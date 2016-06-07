@@ -235,22 +235,22 @@ body {
     }
     
     #header {
-    height: 90px;
+        height: 90px;
     }
     
     #header-name {
-    width: auto;
+        width: 100%;
     }
 }
 
 @media screen and (max-width:520px) {
     
     #header {
-    height: 60px;
+        height: 100%;
     }
     
     #header-name {
-    width: auto;
+        width: auto;
     }
 }
 
