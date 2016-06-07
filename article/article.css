@@ -45,9 +45,14 @@
 .article-date {
     font-size: 20px;
 }
+
 .article-bottom {
     margin: 20px;
     margin-bottom: 40px;
+}
+
+.article-img {
+    margin: 20px;
 }
 
 .article-back {
