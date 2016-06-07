@@ -37,6 +37,10 @@ body {
     background-color: rgb(233,233,233);
 }
 
+#header-name {
+    width: 700px;
+}
+
 /*---Header---*/
 
 /*---Footer---*/

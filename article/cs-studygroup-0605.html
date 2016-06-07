@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+    <title>Website Opened!</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fondation.css">
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="article.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+    <div id="header"><!-- Header -->
+      <div id="header-name">
+          <a href="/index.html"><img src="/img/LOGO.png" class="img-responsive" alt="Hui-En Willake Lin" width="700"></a>
+          
+      </div>
+          <nav class="navbar" id="navbar" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" id="nav-button" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/blog.html">BLOG</a></li>
+                        <li><a href="/portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="/about.html">ABOUT</a></li>
+                        <li><a href="/resume.html">Résumé</a></li>
+                        <li><a href="/about.html#contact">CONTACT</a></li>
+                    </ul>
+                </div><!-- End Mynavbar -->
+            </div><!-- End Container -->
+        </nav><!-- End Navbar -->
+    </div><!-- End Header -->
+    
+    <div id="main">
+        <div class="container">
+          <h1 class="article-title container">Website is now online!</h1>
+          <div class="article-bottom">
+                    <div><p class="article-date">Posted on May 24, 2016 by Willake</p></div>
+            </div>
+           <div class="article">
+               <div class="TW"><a href="website-online-tw.html">Traditional Chinese Version(繁體中文版本)</a></div>
+                <br>
+                <p class="article-content-tw">
+                    最近加入了一個在 PTT 上發現的 C# 讀書會，定期會在禮拜日舉行，參加後覺得收穫不少，             所以想分享一些在裡面學到的技巧。<br>
+                    分享的東西大概是一些我以前沒注意到或不知道的東西，所以並不會從基礎一步一步慢慢說，
+                    但如果我分享的東西在讀者的眼中是常識或是<br>課本上就有的話，也請別怪我太爛 XD，
+                    因為這些基本上也是我用來提醒自己的重點整理。
+                    </p>
+                <h3>前言</h3>
+                <p class="article-content-tw">
+                     C# 算是我第一個接觸的程式語言，在大一上時其實有接觸過 C 和 C++ ，但因為上課非常的不認真，
+                     所以整年的程式都被當掉，<br>
+                     而在大一下的時候才開始認真的去接觸程式語言，而那學期的程式課是視窗應用程式，使用的語言就是 C#  ，<br>
+                     那個時候用純 C# Winform 寫了一個塔防遊戲現在仍然記憶猶新，
+                     現在應該可以寫得更好吧，如果有時間的話再來重製一遍 XD。<br><br>
+                     會參加讀書會主要是因為想要學習一些更進階的東西，而且讀書會的成員幾乎都是些已經有工作的人，
+                     可以從他們了解到一些實務上的應用<br>
+                     像是合作開發的技巧，如何提升效能之類的，也可以從他們身上得知一些在業界遇到的事情之類的。<br><br>
+                     讀書會分成兩一個小組，一組是 C# 進階，一組是學習 ASP.NET MVC ，兩個小組會分配每周進度，<br>
+                     在每個禮拜日會由兩組各派出主講者來分享一些章節的重點和額外的知識，分享給大家，至於 MVC 是什麼東西，<br>
+                     可能會在下次或下下次的心得中慢慢講解，因為到這次讀書會的進度也還沒完全念完 MVC 的概念，
+                     在我完全了解後再另外分享給大家。<br>
+                </p>
+                <h3>讀書會內容</h3>
+                <p class="article-content-tw">
+                    本次的主要內容是一些型別宣告之類的基礎。基本上我對一些基本的型別像是 int, float, string 那些都有大概的了解，<br>不過還是得知了一些值得一提的東西，基本上都是跟 string 息息相關。
+                </p>
+                <h4>string 字串前的前置符號 @</h4>
+                <p class="article-content-tw">
+                    可能有不少人在寫 C# 程式的時候會需要將路徑存到string內放著，但因為在字串之中不能直接使用「\」這樣的符號，<br>
+                    會被當成是跳脫字元來處理，所謂的跳脫字元就是像是「\n」(換行)，「\t」(水平方向tab)之類的東西，假如，<br>今天在 C 槽的 Willake 資料夾裡有個檔案叫 lion.jpg，我們想把這個路徑存到 string 裡，我們宣告了一個string，如果寫成
+                </p>
+               <pre class="prettyprint linenums">string path = "D:\Willake\Lion.jpg";</pre>
+               <p class="article-content-tw">
+                   編譯器會告訴你說這樣寫是錯誤的，所以就必須寫成
+               </p>
+               <pre class="prettyprint linenums">string path = "D:\\Willake\\Lion.jpg";</pre>
+               <p class="article-content-tw">
+                   看起來很麻煩，如果我今天複製了一個路徑我還要特別手動去把每一個「\」多加一個「\」，
+                   但其實只要在雙引號前加上「@」
+               </p>
+               <pre class="prettyprint linenums">string path = @"D:\Willake\lion.jpg";</pre>
+               <p class="article-content-tw">
+                   就不會有問題了，但如果你的字串內還會需要用到像是「\n」之類的東西，記得要拿出來另外寫，<br>
+                   因為所有的跳脫字元都會被忽略掉當成一般的字，這方法還有一些其他的用途像是假如今天你要將一段文字或是 SQL 或是 javascript 語法<br>存進 string 裡面，你就必須要使用到一堆的「+」和「&」符號，或是把整段文字變成一行甚至影響到執行的效能，<br>但只要使用「@」之後就很方便了。
+               </p>
+               <h4>string 的特性 使用「+」來連結字串會浪費記憶體空間</h4>
+               <p class="article-content-tw">
+                   我們在寫 C# 的時候，常常會遇到需要連結字串的問題，通常我們要解決這個問題，我們會使用「+」來進行字串連結
+               </p>
+               <pre class="prettyprint linenums">string msg = "Hello,",Name = "Peter";
+msg += Name;
+msg += ". Today is ";
+msg += System.DateTime.Today.ToShortDateString();</pre>
+               <p class="article-content-tw">
+                   其實當我們這樣使用「+」的時候，你可能會以為它會是這樣，
+               </p>
+               <img src="/img/article/cs-0605/string-plus.png" style="width:500px;">
+               <p class="article-content-tw">
+                   在原本的空間上慢慢的把字串加上去，但其實是這樣，
+               </p>
+               <img src="/img/article/cs-0605/string-plus2.png" style="width:400px;">
+               <p class="article-content-tw">
+                   每當我們用「+」來連結字串，它就會在記憶體上再 new 一個空間來放新的字串，而原本的字串就放在旁邊繼續留著。<br>這是因為 CLR 為了節省記憶體空間，而在 heap 裡加上了 hash table 的機制，
+                   至於詳細，可以參考這個<a href="http://alowblow.blogspot.tw/2011/03/c-string.html">網站</a>，裡面有詳盡的解說。<br>如果不太懂的話可以再寄信給我，我會慢慢解釋。<br>
+                   相對於建立後就不可改變的 string，我們可以使用可改變的 StringBuilder 類別來進行字串的連結，
+                   修改完後才去建立一個 string，<br>而不會一直去 new 新的字串出來，詳細方法如下
+               </p>
+               <pre class="prettyprint linenums">string name = "Peter";
+StringBuilder msg = new StringBuilder("Hello, ");
+msg.Append(name);
+msg.Append(". Today is ");
+msg.Append(DateTime.Now.ToShortDateString());
+string finalMsg = msg.ToString();</pre>
+            <h4>C# 6.0 新功能 字串插值 $</h4>
+            <p class="article-content-tw">
+                  以往我們在進行字串格式化的時候我們會使用 String.Format() 
+            </p>
+            <pre class="prettyprint linenums">string firstName = "Willake";
+string lastName = "Lin";
+int salary = 80000;
+
+string msg1 = String.Format("{0} {1} 's salary is {2:C0} per month.", firstName, lastName, salary);</pre>
+            <p class="article-content-tw">
+                  但在 6.0 的時候新增了一個名為<strong>字串插值</strong> 的新功能，在字串的雙引號前加上「$」
+            </p>
+            <pre class="prettyprint linenums">string firstName = "Willake";
+string lastName = "Lin";
+int salary = 80000;
+
+string msg1 = $"{firstName} {lastName} 's salary is {salary :C0} per month.";</pre>
+           <p class="article-content-tw">
+                  兩者的結果都一樣會是 "Willake Lin 's salary is NT$80000 per month."，
+                  如果今天要插入的變數很多，<br>用 String.Format() 還需要一一去比對，有時候一來一往很容易亂掉，
+                  而如果使用字串插值，在閱讀程式碼時會變得比較易讀。
+            </p>
+            <h3>總結</h3>
+            <p class="article-content-tw">
+                  以上就是我在 0605 讀書會上學到的一些東西，除此之外還有 interface (介面) 的使用，大概會在下次的讀書會心得上一併講到，<br>讀書會的前輩人都很好，不會因為你的程式資歷較淺就把你晾在一旁，滿期待下一次讀書會的，希望能學到更多東西。<br>
+            </p>
+            </div>
+            <div class="article-back"><a href="/blog.html">Back To The Blog</a></div>
+            
+            <div id="disqus_thread"></div>
+        </div><!-- End Container -->
+    </div><!-- End Main -->
+    
+    <div id="footer"> <!-- Footer -->
+        <div class="footer-contact">
+            <a href="https://www.facebook.com/profile.php?id=100001566827416"><i class="fa fa-facebook-official footer-icon"></i></a>
+            <a href="skype:live:siuo60631?add"><i class="fa fa-skype footer-icon"></i></a>
+            <a href="mailto:tsrn46336686@gmail.com"><i class="fa fa-envelope footer-icon"></i></a>
+        </div>
+    </div> <!-- End Footer -->
+    
+    
+    <script src="/js/jquery-1.12.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/foundation.js"></script>
+    <script id="dsq-count-scr" src="//willake.disqus.com/count.js" async></script>
+    
+    <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+
+                s.src = '//willake.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+
+</body>
+
+
+</html>

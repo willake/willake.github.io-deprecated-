@@ -1,3 +1,23 @@
+.article h2{
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.article h3{
+    text-align: left;
+    margin: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.article h4{
+    text-align: left;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .article-title {
     margin-bottom: 20px;
 }
@@ -9,11 +29,17 @@
     text-indent: 50px;
 }
 
+.prettyprint {
+    margin: 20px;
+    text-align: left;
+}
+
 .article-content-tw {
     margin: 20px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
+    text-align: left;
+    line-height: 28px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .article-date {
