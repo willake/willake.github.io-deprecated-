@@ -119,8 +119,8 @@ msg += System.DateTime.Today.ToShortDateString();</pre>
                </p>
                <img src="/img/article/cs-0605/string-plus2.png" class="img-responsive article-img" style="width:400px;">
                <p class="article-content-tw">
-                   每當我們用「+」來連結字串，它就會在記憶體上再 new 一個空間來放新的字串，而原本的字串就放在旁邊繼續留著。<br>這是因為 CLR 為了節省記憶體空間，而在 heap 裡加上了 hash table 的機制，
-                   至於詳細，可以參考這個<a href="http://alowblow.blogspot.tw/2011/03/c-string.html">網站</a>，裡面有詳盡的解說。<br>如果不太懂的話可以再寄信給我，我會慢慢解釋。<br>
+                   每當我們用「+」來連結字串，它就會在記憶體上再 new 一個空間來放新的字串，而原本的字串就放在旁邊繼續留著，<br>漸漸的就產生了一大堆的垃圾，這是因為 CLR 原本為了節省記憶體空間，而在 heap 裡加上了 hash table 的機制導致，<br>
+                   至於詳細，可以參考這個<a href="http://alowblow.blogspot.tw/2011/03/c-string.html">網站</a>，裡面有詳盡的解說。如果不太懂的話可以再寄信給我，我會慢慢解釋。<br>
                    相對於建立後就不可改變的 string，我們可以使用可改變的 StringBuilder 類別來進行字串的連結，
                    修改完後才去建立一個 string，<br>而不會一直去 new 新的字串出來，詳細方法如下
                </p>
