@@ -245,6 +245,10 @@ body {
 
 @media screen and (max-width:520px) {
     
+    #main {
+    padding-top: 0px;
+    }
+    
     #header {
         height: 100%;
     }
