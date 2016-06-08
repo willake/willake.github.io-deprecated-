@@ -20,7 +20,6 @@ hr {
 }
 
 .article-title a{
-    font-size: 20px;
     color:rgb(22, 160, 133);
 }
 
@@ -49,8 +48,9 @@ hr {
 }
 
 @media screen and (max-width:767px) {
-    .article-title{
-        font-size: 30px;
+    
+    .article-title a{
+        font-size: 20px;
     }
 
     .article-content {
