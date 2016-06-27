@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+    <title>[C# Studygroup] 0605</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fondation.css">
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="article.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+    <div id="header"><!-- Header -->
+      <div id="header-name">
+          <a href="/index.html"><img src="/img/LOGO.png" class="img-responsive" alt="Hui-En Willake Lin" width="700"></a>
+          
+      </div>
+          <nav class="navbar" id="navbar" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" id="nav-button" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/blog.html">BLOG</a></li>
+                        <li><a href="/portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="/about.html">ABOUT</a></li>
+                        <li><a href="/resume.html">Résumé</a></li>
+                        <li><a href="/about.html#contact">CONTACT</a></li>
+                    </ul>
+                </div><!-- End Mynavbar -->
+            </div><!-- End Container -->
+        </nav><!-- End Navbar -->
+    </div><!-- End Header -->
+    
+    <div id="main">
+        <div class="container">
+          <h1 class="article-title container">[C# Studygroup] 0605</h1>
+          <div class="article-bottom">
+                    <div><p class="article-date">Posted on June 7, 2016 by Willake</p></div>
+            </div>
+           <div class="article">
+               <div class="TW"><a href="cs-studygroup-0605-tw.html">Traditional Chinese Version(繁體中文版本)</a></div>
+                <br>
+                <p class="article-content">
+                    Recently I've joined a book club which I found on the social media (PTT), this book club was hold every Sunday. After I've joined the book club, I learned lots of new techniques that I used to ignore or I never knew; therefore, I would like to share what I’ve learned from there. The things that I am going to share are some techniques that I'd never notice, so I won't explain everything from the beginning. And for those that think these techniques are too easy and was written on the book, please forgive me for my ignorance because I wrote this in order to remind myself of some key points.
+                    </p>
+                <h3>Foreword</h3>
+                <p class="article-content">
+                     C# is the first programming language that I learned. Actually, in the first semester of my college I used to have learned C and C++; however, I failed the class due to my lack of concentration in class. In the second semester, I decided to learn programming language seriously. At that time, there is a course call Windows Programming and the course is all about C#. During the class, I designed a tower defense game by using C# only. It was a special memory for me and I think there are lots of things that I can improve in order to make the game better. (If I have the time to redo it again lol)<br>
+               </p>
+               <p class="article-content">
+                     The main purpose that I joined the book club is to study more about programming. Also, most of the member of the book club are non-student. I can learn some techniques of cooperate development, how to improve efficacy and know what’s going on in industry. The book club was divided into two groups, one group study advanced C# and the other study ASP.NET MVC. These two groups will assign weekly homework and on every Sunday both groups will come up with a person that’s going to share some key points and techniques that is important in the homework. I’ll explain what’s MVC in my next review, when I have a full understand of it.
+                </p>
+                <h3>What I've learn from book club</h3>
+                <p class="article-content">
+                    This week’s book club we were talking about Type declaration, basically I have had some understand about basic types, such as int, float, string etc. And most of them are all about the “string”.
+                </p>
+                <h4>Verbatim string literals</h4>
+                <p class="article-content">
+                    Some people might need to store a path of a file in to a string while they are using C#; however, we can’t use ‘\’in a string because it will be seen as an escape character. Escape character are something like “\n” (end line) “\t” (tab). Today we assume that we have a file name “Lion.jpg” in a file name “Willake” in local disk-D, and we want to store its path in to a string. Then, we declare the string like this:
+                </p>
+               <pre class="prettyprint linenums">string path = "D:\Willake\Lion.jpg";</pre>
+               <p class="article-content">
+                   The compiler will tell you that there is an error, so we have to declare it like this:
+               </p>
+               <pre class="prettyprint linenums">string path = "D:\\Willake\\Lion.jpg";</pre>
+               <p class="article-content">
+                   Its quite bother to add an extra ‘\’ to every ‘\’, but actually we just need to add a ‘@’ in front of the quotation mark and it will be fine. Though you still have to write it in the other way if you really need to use “\n”.
+               </p>
+               <pre class="prettyprint linenums">string path = @"D:\Willake\Lion.jpg";</pre>
+               <p class="article-content">
+                    Because all the escape characters will be seen as normal character in this method, if you are going to put some words or SQL or even javascript code in to a string, you might need to use a lot of ‘+’ and ‘&’ . This way may cause low efficacy, but if you use ‘@’ it will be much more simple.
+               </p>
+               <h4>Use ‘+’ to concatenate multiple strings will waste the memory space.</h4>
+               <p class="article-content">
+                   We usually face the problem of concatenating multiple strings while we using C#, and what we do is adding a ‘+’ between strings.
+               </p>
+               <pre class="prettyprint linenums">string msg = "Hello,",Name = "Peter";
+msg += Name;
+msg += ". Today is ";
+msg += System.DateTime.Today.ToShortDateString();</pre>
+               <p class="article-content">
+                   When we use that method, you may think it will be like this in the memory:
+               </p>
+               <img src="/img/article/cs-0605/string-plus.png" style="width:500px;">
+               <p class="article-content">
+                   Stored the data in the original location of the string. Actually, it will be like this:
+               </p>
+               <img src="/img/article/cs-0605/string-plus2.png" style="width:400px;">
+               <p class="article-content">
+                   Every time we use ‘+’ to concatenating strings, the memory will assign a new space to store the string. The original string won't be deleted and will become a trash.
+                   It is because CLR wants to save the memory space so it build a hash table system
+                    in heap. Relative to string, StringBuilder class is better. It is changeable so it won't assign any new space. we can use it to concatenate strings.
+               </p>
+               <pre class="prettyprint linenums">string name = "Peter";
+StringBuilder msg = new StringBuilder("Hello, ");
+msg.Append(name);
+msg.Append(". Today is ");
+msg.Append(DateTime.Now.ToShortDateString());
+string finalMsg = msg.ToString();</pre>
+            <h4>C# 6.0 Interpolated Strings</h4>
+            <p class="article-content">
+                  We used to use String.Format() function to converts the value of objects to strings  and inserts them into another.
+            </p>
+            <pre class="prettyprint linenums">string firstName = "Willake";
+string lastName = "Lin";
+int salary = 80000;
+
+string msg1 = String.Format("{0} {1} 's salary is {2:C0} per month.", firstName, lastName, salary);</pre>
+            <p class="article-content">
+                  In C# 6.0, Microsoft add a new feature called “Interpolated Strings”. You can add a
+                  ‘$’ before the string.
+            </p>
+            <pre class="prettyprint linenums">string firstName = "Willake";
+string lastName = "Lin";
+int salary = 80000;
+
+string msg1 = $"{firstName} {lastName} 's salary is {salary :C0} per month.";</pre>
+           <p class="article-content">
+                  Both of results will display "Willake Lin 's salary is NT$80000 per month.". If there are lots of variables that need to be insert into a string, using string.format() isnt that convenient because you need to compare against each other and that is a huge task.
+            </p>
+            <h3>Conclusion</h3>
+            <p class="article-content">
+                  This is what I learned from the study group on June 5. Everyone in the group is nice, they won't alienate people who is just a beginner. I'm really looking forward
+                  to next gathering, hoping i can learn more interesting things.
+            </p>
+            </div>
+            <div class="article-back"><a href="/blog.html">Back To The Blog</a></div>
+            
+            <div id="disqus_thread"></div>
+        </div><!-- End Container -->
+    </div><!-- End Main -->
+    
+    <div id="footer"> <!-- Footer -->
+        <div class="footer-contact">
+            <a href="https://www.facebook.com/profile.php?id=100001566827416"><i class="fa fa-facebook-official footer-icon"></i></a>
+            <a href="skype:live:siuo60631?add"><i class="fa fa-skype footer-icon"></i></a>
+            <a href="mailto:tsrn46336686@gmail.com"><i class="fa fa-envelope footer-icon"></i></a>
+        </div>
+    </div> <!-- End Footer -->
+    
+    
+    <script src="/js/jquery-1.12.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/foundation.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+    <script id="dsq-count-scr" src="//willake.disqus.com/count.js" async></script>
+    
+    <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+
+                s.src = '//willake.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+
+</body>
+
+
+</html>
