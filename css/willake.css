@@ -1,0 +1,228 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Common */
+
+#wil-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: #70a9a1;
+    overflow: hidden;
+    height: 75px;
+    box-shadow: 0px 1px 1px #0B2027;
+}
+
+#wil-nav-logo {
+    margin: 0 !important;
+    position: relative;
+    padding: 0px !important;
+}
+
+#wil-nav-logo img{
+    position: absolute;
+    left: 38%;
+    width: 70px;
+}
+
+#wil-nav-logo img:hover{
+    position: absolute;
+    left: 38%;
+    animation-name: logo-hover;
+    animation-duration: 0.8s;
+    width: 75px;
+}
+
+#wil-nav a{
+    color: #FFFFFF;
+    margin: 20px 0px;;
+    padding: 0px 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+#wil-nav a:hover{
+    animation-name: nav-hover;
+    animation-duration: 0.5s;
+    font-size: 1.6em;
+    color: #f6f1d1;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 112px;
+    background-color: #0b2027;
+    color: white;
+    text-align: center;
+}
+
+.footer-copyright {
+    margin:15px 10px;
+    font-size: 16px;
+}
+
+.footer-contact {
+    margin: 20px 0 0 0;
+    /*height: 40px;*/
+}
+
+.footer-contact a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    height: 36px;
+}
+
+.footer-contact i {
+    font-size: 30px; 
+    color: white; 
+    padding: 0 17px;
+    color: #ffffff;
+}
+
+.footer-contact i:hover {
+    animation-name: contact-hover;
+    animation-duration: 0.5s;
+    color: #f6f1d1;
+    font-size: 35px;
+}
+
+.page-title {
+    margin-top: 10vh;
+    color: #ffffff;
+    text-align: center;
+    font-size: 3vw;
+}
+
+
+/* Common */
+
+/* Index */
+
+#index-main{
+    height: 90%;
+    padding-top: 75px;
+    background-image: url(../img/57.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.index-main-space {
+    height: 35%;
+}
+
+#index-main-name {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 4vw;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+#index-main-slogan {
+    text-align: center;
+    color: #E5E5E5;
+    font-size: 1.9vw;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+/* Index */
+
+/* Resume */
+
+#resume-main{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-image: url(../img/57.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.resume-title {
+    margin-top: 4vh;
+    color: #ffffff;
+    text-align: left;
+    font-size: 2vw;
+    border-bottom: 2px white solid;
+}
+
+.resume-context {
+    margin: 5px;
+    padding-left: 50px;
+    color: #ffffff;
+    font-size: 1vw;
+    letter-spacing: 1px;
+}
+
+/* About */
+
+#about-main{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    /*
+    background-image: url(../img/57.jpg);
+    */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:black;
+}
+
+#about-context {
+    margin: 5px;
+    padding-top: 20px;
+    padding-left: 50px;
+    color: #ffffff;
+    font-size: 1.1vw;
+    letter-spacing: 0.1px;
+}
+
+#about-contact {
+    
+}
+
+/* About */
+
+/* Animations */
+
+@keyframes nav-hover {
+    from {color: #ffffff; font-size: 1.4em; }
+    to {color: #f6f1d1; font-size: 1.6em;}
+}
+
+@keyframes contact-hover {
+    from {color: #ffffff; font-size: 30px; }
+    to {color: #f6f1d1; font-size: 35px;}
+}
+
+@keyframes logo-hover {
+    from {width: 68px;}
+    to {width: 75px;}
+}
