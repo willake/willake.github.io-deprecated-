@@ -3,7 +3,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Serif', sans-serif;
 }
 
 * {
@@ -192,16 +192,74 @@ footer {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    color:black;
 }
 
-#about-context {
-    margin: 5px;
-    padding-top: 20px;
-    padding-left: 50px;
+.about-section-title {
+    padding: 70px;
     color: #ffffff;
-    font-size: 1.1vw;
+    background-color: #383635;
+    text-align:center;
+    font-size: 3vw;
+}
+
+.about-section-content {
+    padding: 30px 0;
+}
+
+.about-side-section-title {
+    padding: 30px 50px;
+    font-size: 2vw;
+}
+
+.about-side-section-content {
+    margin: 5px;
+    padding: 0px 50px;
+    color: #383635;
+    font-size: 1.3vw;
     letter-spacing: 0.1px;
+}
+
+.about-middle-section {
+    background-color: #383635;
+    margin-bottom: 30px;
+}
+
+.about-middle-section-title {
+    padding: 30px;
+    font-size: 2.2vw;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about-middle-section-content {
+    padding: 20px 0 60px 0;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about-experience-section {
+    padding: 20px 0;
+}
+
+.about-experience-section-title {
+    font-size: 1.6vw;
+}
+
+.about-experience-section-content-title {
+    padding: 10px 0;
+    font-size: 1.4vw;
+}
+
+.about-experience-section-content-subtitle {
+    padding: 5px 0;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: gray;
+}
+.about-experience-section-content-context {
+    padding: 10px 0;
+    font-size: 1.1vw;
 }
 
 #about-contact {
