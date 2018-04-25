@@ -3,7 +3,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    font-family: 'PT Serif', sans-serif;
+    font-family: 'Raleway', 'PT Serif', sans-serif;
 }
 
 * {
@@ -115,15 +115,53 @@ footer {
     font-size: 3vw;
 }
 
+.wil-text-white {
+    color: #ffffff;
+}
+
+.wil-text-color1 {
+    color: #383635;
+}
+
+.wil-text-color2 {
+    color: gray;
+}
+
+.wil-h1 {
+    font-size: 2.2vw;
+    cursor: default;
+}
+
+.wil-h2 {
+    font-size: 2vw;
+    cursor: default;
+}
+
+.wil-h3 {
+    font-size: 1.3vw;
+}
+
+.wil-h4 {
+    font-size: 1.2vw;
+}
+
+.wil-h5 {
+    font-size: 1.1vw;
+}
+
+.wil-context {
+    font-size: 1vw;
+}
+
 
 /* Common */
 
 /* Index */
 
 #index-main{
-    height: 90%;
+    height: 100%;
     padding-top: 75px;
-    background-image: url(../img/57.jpg);
+    background-image: url(/img/index.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -136,7 +174,6 @@ footer {
 
 #index-main-name {
     text-align: center;
-    color: #FFFFFF;
     font-size: 4vw;
     letter-spacing: 2px;
     cursor: default;
@@ -144,7 +181,6 @@ footer {
 
 #index-main-slogan {
     text-align: center;
-    color: #E5E5E5;
     font-size: 1.9vw;
     letter-spacing: 1px;
     cursor: default;
@@ -152,90 +188,74 @@ footer {
 
 /* Index */
 
-/* Resume */
-
-#resume-main{
-    padding-top: 75px;
-    padding-bottom: 75px;
-    background-image: url(../img/57.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.resume-title {
-    margin-top: 4vh;
-    color: #ffffff;
-    text-align: left;
-    font-size: 2vw;
-    border-bottom: 2px white solid;
-}
-
-.resume-context {
-    margin: 5px;
-    padding-left: 50px;
-    color: #ffffff;
-    font-size: 1vw;
-    letter-spacing: 1px;
-}
-
 /* About */
 
 #about-main{
     padding-top: 75px;
     padding-bottom: 75px;
-    /*
-    background-image: url(../img/57.jpg);
-    */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.about-section-title {
-    padding: 70px;
-    color: #ffffff;
-    background-color: #383635;
-    text-align:center;
-    font-size: 3vw;
+#about-photo {
+    padding: 40px;
 }
 
-.about-section-content {
-    padding: 30px 0;
+#about-banner {
+    background-image: url(/img/banner-game.jpg);
+}
+
+#about-work {
+    background-image: url(/img/banner-work.jpg);
 }
 
 .about-side-section-title {
-    padding: 30px 50px;
-    font-size: 2vw;
+    padding: 40px 50px;
 }
 
 .about-side-section-content {
     margin: 5px;
     padding: 0px 50px;
-    color: #383635;
-    font-size: 1.3vw;
     letter-spacing: 0.1px;
 }
 
 .about-middle-section {
     background-color: #383635;
+    height: 300px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .about-middle-section-title {
-    padding: 30px;
-    font-size: 2.2vw;
+    position: absolute;
+    width: 100%;
+    padding: 110px 0 0 0;
     text-align: center;
-    color: #ffffff;
+    z-index: 2;
 }
 
 .about-middle-section-content {
-    padding: 20px 0 60px 0;
-    font-size: 1.2vw;
+    position: absolute;
+    width: 100%;
+    padding: 170px 0 80px 0;
     text-align: center;
-    color: #ffffff;
+    z-index: 2;
+}
+
+.about-middle-section-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: brightness(40%); /* Safari 6.0 - 9.0 */
+    filter: brightness(40%);
+    z-index: 0;
 }
 
 .about-experience-section {
@@ -243,30 +263,61 @@ footer {
 }
 
 .about-experience-section-title {
-    font-size: 1.6vw;
 }
 
 .about-experience-section-content-title {
     padding: 10px 0;
-    font-size: 1.4vw;
 }
 
 .about-experience-section-content-subtitle {
     padding: 5px 0;
-    font-size: 1.2vw;
     font-weight: 700;
-    color: gray;
 }
 .about-experience-section-content-context {
     padding: 10px 0;
-    font-size: 1.1vw;
-}
-
-#about-contact {
-    
 }
 
 /* About */
+
+/* Contact */
+
+.contact-banner {
+    margin-top: 75px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.contact-banner-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/banner-contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center -190px;
+    background-size: cover;
+    -webkit-filter: brightness(40%); /* Safari 6.0 - 9.0 */
+    filter: brightness(40%);
+    z-index: 0;
+}
+
+.contact-banner-title {
+    position: absolute;
+    width: 100%;
+    padding: 170px 0 0 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.contact-banner-subtitle {
+    position: absolute;
+    width: 100%;
+    padding: 230px 0 0 0;
+    text-align: center;
+    z-index: 2;
+}
+/* Contact */
 
 /* Animations */
 
