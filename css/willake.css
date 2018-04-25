@@ -211,13 +211,17 @@ footer {
     background-image: url(/img/banner-work.jpg);
 }
 
+.about-side-section {
+    padding-bottom: 40px;
+}
+
 .about-side-section-title {
     padding: 40px 50px;
 }
 
 .about-side-section-content {
     margin: 5px;
-    padding: 0px 50px;
+    padding: 0px 50px 40px 0;
     letter-spacing: 0.1px;
 }
 
