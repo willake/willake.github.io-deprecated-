@@ -61,6 +61,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="/css/willake.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hamburgers.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,7 +73,8 @@
 
 <body>
     <nav id="wil-nav">
-        <div class="container">
+        <a id="wil-mobile-nav-logo" class="wil-text-white hidden-md hidden-lg" href="/"><img src="/img/LOGO-white-01.png">Willake Lin</a>
+        <div id="wil-nav-content" class="container hidden-xs hidden-sm">
             <div class="row">
                 <a class="col-md-2" href="/portfolio/">Portfolio</a>
                 <a class="col-md-2" href="https://willake.me/blog/">Blog</a>
@@ -80,6 +82,19 @@
                 <a class="col-md-2" href="/about/">About</a>
                 <a class="col-md-2" href="/contact/">Contact</a>
             </div>
+        </div>
+        <button id="wil-mobile-nav-hamburger" class="hamburger hamburger--collapse hidden-md hidden-lg" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div id="wil-mobile-nav-content" class="close hidden-md hidden-lg">
+           <ul>
+            <li class="hide"><a href="/portfolio/">Portfolio</a></li>
+            <li class="hide"><a href="https://willake.me/blog/">Blog</a></li>
+            <li class="hide"><a href="/about/">About</a></li>
+            <li class="hide"><a href="/contact/">Contact</a></li>
+           </ul>
         </div>
     </nav>
     <section id="index-main">
@@ -121,6 +136,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/willake.js"></script>
 </body>
 
 </html>

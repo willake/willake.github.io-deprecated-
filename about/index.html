@@ -61,6 +61,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="/css/willake.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hamburgers.min.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,7 +74,8 @@
 
 <body>
     <nav id="wil-nav">
-        <div class="container">
+        <a id="wil-mobile-nav-logo" class="wil-text-white hidden-md hidden-lg" href="/"><img src="/img/LOGO-white-01.png">Willake Lin</a>
+        <div id="wil-nav-content" class="container hidden-xs hidden-sm">
             <div class="row">
                 <a class="col-md-2" href="/portfolio/">Portfolio</a>
                 <a class="col-md-2" href="https://willake.me/blog/">Blog</a>
@@ -81,24 +84,37 @@
                 <a class="col-md-2" href="/contact/">Contact</a>
             </div>
         </div>
+        <button id="wil-mobile-nav-hamburger" class="hamburger hamburger--collapse hidden-md hidden-lg" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div id="wil-mobile-nav-content" class="close hidden-md hidden-lg">
+           <ul>
+            <li class="hide"><a href="/portfolio/">Portfolio</a></li>
+            <li class="hide"><a href="https://willake.me/blog/">Blog</a></li>
+            <li class="hide"><a href="/about/">About</a></li>
+            <li class="hide"><a href="/contact/">Contact</a></li>
+           </ul>
+        </div>
     </nav>
     <section id="about-main">
         <div class="about-middle-section">
             <div class="about-middle-section-title wil-h1 wil-text-white">My Passion &#38; Personality</div>
-            <div class="about-middle-section-content wil-h3 wil-text-white">Know more about me</div>
+            <div class="about-middle-section-content wil-h3 wil-text-white">Gameplayer Programmer | Game Designer | Web Developer</div>
             <div id="about-banner" class="about-middle-section-background"></div>
         </div>
         <div class="container">
             <!-- Introduction -->
             <div class="about-side-section">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="about-side-section-title wil-h2 wil-text-color1">Take a deeper look</div>
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-1 col-md-offset-0 col-md-6">
+                        <div class="about-side-section-title wil-h2 wil-text-color1">Know more about me</div>
                         <p class="about-side-section-content wil-h5 wil-text-color1">
-                            My name is Hui En Lin. You can call me "Willake". <br><br>I am a gameplay programmer base in Taiwan and looking for a job aborad currently. <br><br> I'm also interested in game designing and website developing.
+                            My name is Willake Lin. You can call me Wil. <br><br>I am a gameplay programmer base in Taiwan and looking for a job aborad currently. <br><br> I'm also interested in game designing and website developing.
                         </p>
                     </div>
-                    <div class="col-md-5 col-md-offset-1">
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-md-offset-1">
                         <div id="about-photo"><img src="/img/about.jpg" class="img-responsive"></div>
                     </div>
                 </div>
@@ -108,16 +124,16 @@
         <!-- Resume -->
         <div class="about-middle-section">
             <div class="about-middle-section-title wil-h1 wil-text-white">What I'vd done &#38; What I can do</div>
-            <div class="about-middle-section-content wil-h5 wil-text-white">I have worked as a game developer for 3 years and a web programmer for 4 months in Taiwan.</div>
+            <div class="about-middle-section-content wil-h5 wil-text-white">I have worked as a web programmer for 4 months and learn about game developing for 2 years in Taiwan.</div>
             <div id="about-work" class="about-middle-section-background"></div>
         </div>
         <div class="container">
             <div class="about-experience-section">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="about-experience-section-title wil-h3 wil-text-color1">Work Experience</div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xs-12 col-sm-8">
                         <div class="about-experience-section-content-title wil-h4 wil-text-color1">Front-End Developer</div>
                         <div class="about-experience-section-content-subtitle wil-h5 wil-text-color2">SeekrTech, Taichung, Taiwan, July 2017 - September 2017</div>
                         <div class="about-experience-section-content-context wil-context wil-text-color1">- Developed browser extension with HTML, Css, Javascript <br> - Collaborated with UI/UX designer to define application features <br> - Collaborated with design team to identify users need, and produced the company offical website with HTML, CSS and Javascript <br> - Work with seinor programmer to make browser extension comunicate with server</div>
@@ -126,9 +142,9 @@
             </div>
             <div class="about-experience-section">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-4">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xs-12 col-sm-8">
                         <div class="about-experience-section-content-title wil-h4 wil-text-color1">Game Developer</div>
                         <div class="about-experience-section-content-subtitle wil-h5 wil-text-color2">National Taiwan Normal University, Taipei, Taiwan, July 2016 - July 2017</div>
                         <div class="about-experience-section-content-context wil-context wil-text-color1">- Collaborated with colleague to discuss and design whole game <br> - Draw up design system detail, divided work efficiency <br> - Developed the whole game system to make it playable <br> - Implemented several significant gameplay feature with Unity3D</div>
@@ -137,10 +153,10 @@
             </div>
             <div class="about-experience-section">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="about-experience-section-title wil-h3 wil-text-color1">Project Experience</div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xs-12 col-sm-8">
                         <div class="about-experience-section-content-title wil-h4 wil-text-color1">Hourglass : Project Norn (Unity)</div>
                         <div class="about-experience-section-content-subtitle wil-h5 wil-text-color2">Gameplay Programmer, Student Project, July 2016 - Present</div>
                         <div class="about-experience-section-content-context wil-context wil-text-color1">- Discussed with game designer to solve problem between designing and programming, improved level design and remove bugs. <br> - Collaborated with game artist to promote efficiency and make graphic more lively <br> - Implemented several significant gameplay features with Unity3D</div>
@@ -149,10 +165,10 @@
             </div>
             <div class="about-experience-section">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="about-experience-section-title wil-h3 wil-text-color1">Education</div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xs-12 col-sm-8">
                         <div class="about-experience-section-content-title wil-h4 wil-text-color1">B.A. in Information Comunication</div>
                         <div class="about-experience-section-content-context wil-context wil-text-color1">Yuan Ze University, Taiwan, September 2015 - Present</div>
                     </div>
@@ -160,10 +176,10 @@
             </div>
             <div class="about-experience-section">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="about-experience-section-title"></div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xs-12 col-sm-8">
                         <div class="about-experience-section-content-title wil-h4 wil-text-color1">B.A in Information Management</div>
                         <div class="about-experience-section-content-context wil-context wil-text-color1">Yuan Ze University, Taiwan, September 2013 - July 2015</div>
                     </div>
@@ -198,6 +214,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/willake.js"></script>
 </body>
 
 </html>
