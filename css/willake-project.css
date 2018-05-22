@@ -101,9 +101,33 @@
     background-image: url(/portfolio/escape-the-room-flash/Intro.jpg);
 }
 
+#project-snowball-rage {
+    background-image: url(/portfolio/snowball-rage/Intro.jpg);
+}
+
+#project-secret-triangle {
+    background-image: url(/portfolio/secret-triangle/Intro.jpg);
+}
+
+#project-pinka {
+    background-image: url(/portfolio/pinka/Intro.jpg);
+}
+
+#project-i-just-want-to-cook {
+    background-image: url(/portfolio/i-just-want-to-cook/Intro.jpg);
+}
+
 @media screen and (min-width: 768px) { 
     .project-detail {
         margin-bottom: 20px;
+    }
+    
+    .project-banner-section {
+        height: 350px;
+    }
+    
+    .project-banner-title {
+        top: 45%;
     }
 }
 

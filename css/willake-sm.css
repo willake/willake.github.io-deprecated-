@@ -87,6 +87,11 @@
 
 /* Contact */
     
+.contact-banner {
+    height: 400px;
+}
+
+    
 .contact-middle-section-title {
     font-size: 25px;
 }
