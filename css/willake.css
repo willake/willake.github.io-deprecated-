@@ -170,30 +170,58 @@ footer {
 /* Index */
 
 #index-main{
-    height: 100%;
+    height: calc(100% - 50px);
     background-image: url(/img/index.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 
-.index-main-space {
-    height: 40%;
+.index-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-#index-main-name {
+.index-video-wrap video {
+    height: 100%;
+}
+
+.index-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0b2027;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.index-title {
+    position: absolute;
+    width: 100%;
     text-align: center;
-    font-size: 35px;
-    letter-spacing: 2px;
+    font-size: 30px;
+    top: 40%;
     cursor: default;
+    z-index: 2;
 }
 
-#index-main-slogan {
+.index-subtitle {
+    position: absolute;
+    width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+    top: 47%;
     letter-spacing: 1px;
     cursor: default;
+    z-index: 2;
 }
 
 /* Index */
@@ -346,13 +374,99 @@ footer {
 /* Portfolio */
 
 #portfolio-main {
-    height: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
-.portfoli-message {
-    padding-top: 40%;
+#portfolio-banner {
+    background-image: url(/img/about-intro3.jpg);
+    background-position: center top;
+}
+
+.portfolio-banner-section {
+    background-color: #383635;
+    height: 300px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.portfolio-banner-title {
+    position: absolute;
+    width: 100%;
+    padding: 110px 0 0 0;
     text-align: center;
+    z-index: 2;
+}
+
+.portfolio-banner-content {
+    position: absolute;
+    width: 100%;
+    padding: 160px 30px 80px 30px;
+    text-align: center;
+    z-index: 2;
+}
+
+.portfolio-banner-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: brightness(40%); /* Safari 6.0 - 9.0 */
+    filter: brightness(40%);
+    z-index: 0;
+}
+    
+.portfolio-section-title {
+    padding: 10px;
+}
+
+.portfolio-project {
+    padding-bottom: 10px;
+}
+
+.portfolio-project-section {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.portfolio-project-title {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.portfolio-project-tag-container {
+    padding-left: 5px;
+}
+
+.portfolio-project-tag {
+    float: left;
+    margin-left: 5px;
+    padding: 0 10px;
+    background-color: #70a9a1;
+    border-radius: 0  0 5px 5px;
+    text-align: center;
+}
+
+.portfolio-project-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100px;
+    -webkit-filter: brightness(40%); /* Safari 6.0 - 9.0 */
+    filter: brightness(40%);
+    z-index: 0;
 }
 
 /* Portfolio */
@@ -373,285 +487,38 @@ footer {
     from {width: 68px;}
     to {width: 75px;}
 }
-/* Media */
 
-/* Small devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) { 
-   /* Nav */
+/* Animations */
 
-#wil-nav {
-    height: 60px;
+/* Portfolio BackGrounds */
+
+#portfolio-Forest {
 }
 
-#wil-mobile-nav-logo {
-    padding: 6px 0 0 13px;
-    font-size: 20px;
+#portfolio-Pinka {
+    background-image: url(/portfolio/pinka/Intro-thin.jpg);
 }
 
-#wil-mobile-nav-logo img{
-    width: 50px;
+#portfolio-ETR-Unreal {
+    background-image: url(/portfolio/escape-the-room-unreal/Intro-thin.jpg);
 }
 
-#wil-mobile-nav-hamburger {
-    padding: 20px 20px 0 0px;
+#portfolio-SnowBallRage {
+    background-image: url(/portfolio/snowball-rage/Intro-thin.jpg);
 }
+
+#portfolio-ETR-Flash {
+    background-image: url(/portfolio/escape-the-room-flash/Intro-thin.jpg);
+}
+
+#portfolio-Hourglass {
     
-/* Nav */
-
-/* Common */
-    
-.wil-h1 {
-    font-size: 25px;
-    cursor: default;
 }
 
-.wil-h2 {
-    font-size: 18px;
-    cursor: default;
+#portfolio-IJWtC{
+    background-image: url(/portfolio/i-just-want-to-cook/Intro-thin.jpg);
 }
 
-.wil-h3 {
-    font-size: 16px;
-}
-
-.wil-h4 {
-    font-size: 14px;
-}
-
-.wil-h5 {
-    font-size: 12px;
-}
-
-.wil-context {
-    font-size: 10px;
-}
-
-/* Common */
-
-/* Index */
-
-.index-main-space {
-    height: 42%;
-}
-
-#index-main-name {
-    font-size: 50px;
-    letter-spacing: 1px;
-}
-
-#index-main-slogan {
-    font-size: 30px;
-}
-
-/* Index */
-
-/* About */
-
-#about-photo {
-    padding: 20px;
-    padding-top: 0px;
-}
-    
-.about-side-section {
-    margin-bottom: 15px;
-}
-
-.about-side-section-title {
-    padding: 0px 0px 20px 0px;
-}
-    
-.about-middle-section-content {
-    padding: 160px 40px 80px 40px;
-}
-    
-/* About */
-
-/* Contact */
-    
-.contact-middle-section-title {
-    font-size: 25px;
-}
-
-.contact-middle-section-subtitle {
-    font-size: 20px;
-}
-
-.contact-section-content {
-    text-align: center;
-    padding: 20px;
-}
-/* Contact */
-}
-
-@media screen and (min-width: 970px) { 
-    /* Nav */
-
-#wil-nav {
-    height: 75px;
-}
-
-#wil-nav-logo {
-    margin: 0 !important;
-    position: relative;
-    padding: 0px !important;
-}
-
-#wil-nav-logo img{
-    position: absolute;
-    left: 38%;
-    width: 70px;
-}
-
-#wil-nav-logo img:hover{
-    position: absolute;
-    left: 38%;
-    animation-name: logo-hover;
-    animation-duration: 0.8s;
-    width: 75px;
-}
-
-#wil-nav-content a{
-    color: #FFFFFF;
-    margin: 20px 0px;;
-    padding: 0px 15px;
-    display: inline-block;
-    text-align: center;
-    font-size: 22px;
-    text-decoration: none;
-    cursor: pointer;
-    height: 100%;
-}
-
-#wil-nav-content a:hover{
-    animation-name: nav-hover;
-    animation-duration: 0.5s;
-    font-size: 24px;
-    color: #f6f1d1;
-}
-/* Nav */
-
-/* Footer */
-
-footer {
-    height: 110px;
-}
-
-.footer-copyright {
-    margin-top:15px;
-    font-size: 15px;
-}
-
-.footer-contact {
-    margin: 20px 0 0 0;
-}
-
-.footer-contact i {
-    font-size: 30px; 
-    padding: 0 22px;
-}
-
-.footer-contact i:hover {
-    font-size: 35px;
-}
-/* Footer */
-
-/* Common */
-
-.wil-h1 {
-    font-size: 2.2vw;
-}
-
-.wil-h2 {
-    font-size: 1.3vw;
-}
-
-.wil-h3 {
-    font-size: 1.2vw;
-}
-
-.wil-h4 {
-    font-size: 1.1vw;
-}
-
-.wil-h5 {
-    font-size: 0.9vw;
-}
-
-.wil-context {
-    font-size: 0.8vw;
-}
-
-/* Common */
-
-/* Index */
-
-.index-main-space {
-    height: 30%;
-}
-
-#index-main-name {
-    font-size: 3vw;
-}
-
-#index-main-slogan {
-    font-size: 1.8vw;
-}
-
-/* Index */
-
-/* About */
-    
-#about-main {
-    padding-bottom: 130px;
-}
-    
-#about-photo {
-    padding: 20px;
-}
-
-.about-side-section-title {
-    padding: 40px 0px 20px 10px;
-    text-align: left;
-}
-
-.about-side-section-content {
-    margin: 20px 0 0 10px;
-    letter-spacing: 0.1px;
-    text-align: left;
-}
-
-.about-middle-section {
-    height: 400px;
-}
-
-.about-middle-section-title {
-    padding: 160px 0 0 0;
-}
-
-.about-middle-section-content {
-    padding: 215px 30px 80px 30px;
-}
-
-/* About */
-
-/* Contact */
-    
-.contact-banner {
-    height: 400px;
-}
-
-.contact-middle-section {
-    padding: 40px;
-    text-align: left;
-}
-
-/* Contact */
-
-/* Portfolio */
-
-.portfoli-message {
-    padding-top: 30%;
-}
-
-/* Portfolio */
+#portfolio-SecretTriangle{
+    background-image: url(/portfolio/secret-triangle/Intro-thin.jpg);
 }

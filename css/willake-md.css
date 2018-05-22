@@ -1,0 +1,218 @@
+/* Media */
+@media screen and (min-width: 970px) { 
+    /* Nav */
+
+#wil-nav {
+    height: 75px;
+}
+
+#wil-nav-logo {
+    margin: 0 !important;
+    position: relative;
+    padding: 0px !important;
+}
+
+#wil-nav-logo img{
+    position: absolute;
+    left: 38%;
+    width: 70px;
+}
+
+#wil-nav-logo img:hover{
+    position: absolute;
+    left: 38%;
+    animation-name: logo-hover;
+    animation-duration: 0.8s;
+    width: 75px;
+}
+
+#wil-nav-content a{
+    color: #FFFFFF;
+    margin: 20px 0px;;
+    padding: 0px 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+#wil-nav-content a:hover{
+    animation-name: nav-hover;
+    animation-duration: 0.5s;
+    font-size: 24px;
+    color: #f6f1d1;
+}
+/* Nav */
+
+/* Footer */
+
+footer {
+    height: 110px;
+}
+
+.footer-copyright {
+    margin-top:15px;
+    font-size: 15px;
+}
+
+.footer-contact {
+    margin: 20px 0 0 0;
+}
+
+.footer-contact i {
+    font-size: 30px; 
+    padding: 0 22px;
+}
+
+.footer-contact i:hover {
+    font-size: 35px;
+}
+/* Footer */
+
+/* Common */
+
+.wil-h1 {
+    font-size: 2.2vw;
+}
+
+.wil-h2 {
+    font-size: 1.3vw;
+}
+
+.wil-h3 {
+    font-size: 1.2vw;
+}
+
+.wil-h4 {
+    font-size: 1.1vw;
+}
+
+.wil-h5 {
+    font-size: 0.9vw;
+}
+
+.wil-context {
+    font-size: 0.8vw;
+}
+
+/* Common */
+
+/* Index */
+
+.index-video-wrap video {
+    height: auto;
+    width: 100%;
+}
+    
+.index-overlay {
+    opacity: 0.7;        
+}
+
+.index-title {
+    top: 35%;
+    font-size: 3vw;        
+}
+    
+.index-subtitle {
+    top: 44%;
+    font-size: 1.6vw;        
+}
+    
+/* Index */
+
+/* About */
+    
+#about-main {
+    padding-bottom: 130px;
+}
+    
+#about-photo {
+    padding: 20px;
+}
+
+.about-side-section-title {
+    padding: 40px 0px 20px 10px;
+    text-align: left;
+}
+
+.about-side-section-content {
+    margin: 20px 0 0 10px;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.about-middle-section {
+    height: 400px;
+}
+
+.about-middle-section-title {
+    padding: 160px 0 0 0;
+}
+
+.about-middle-section-content {
+    padding: 215px 30px 80px 30px;
+}
+
+/* About */
+
+/* Contact */
+    
+.contact-banner {
+    height: 400px;
+}
+
+.contact-middle-section {
+    padding: 40px;
+    text-align: left;
+}
+
+/* Contact */
+
+/* Portfolio */
+    
+#portfolio-main {
+    padding-bottom: 150px;
+}
+    
+.portfolio-banner-section {
+    height: 400px;
+}
+    
+.portfolio-banner-title {
+    top: 40px;
+}
+    
+.portfolio-banner-content {
+    top: 50px;
+}
+    
+.portfolio-section-title {
+    padding: 10px 110px;
+}    
+    
+.portfolio-project-section {
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+    
+.portfolio-project-background {
+    background-size: auto 150px;
+    -webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+}
+
+.portfolio-project-background:hover{
+    background-size: auto 160px;
+    -webkit-filter: brightness(100%); /* Safari 6.0 - 9.0 */
+    filter: brightness(100%);
+}    
+
+.portfolio-project-tag {
+    cursor: default;
+}
+    
+/* Portfolio */
+}

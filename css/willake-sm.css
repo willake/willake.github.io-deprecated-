@@ -1,0 +1,120 @@
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+   /* Nav */
+
+#wil-nav {
+    height: 60px;
+}
+
+#wil-mobile-nav-logo {
+    padding: 6px 0 0 13px;
+    font-size: 20px;
+}
+
+#wil-mobile-nav-logo img{
+    width: 50px;
+}
+
+#wil-mobile-nav-hamburger {
+    padding: 20px 20px 0 0px;
+}
+    
+/* Nav */
+
+/* Common */
+    
+.wil-h1 {
+    font-size: 25px;
+    cursor: default;
+}
+
+.wil-h2 {
+    font-size: 19px;
+    cursor: default;
+}
+
+.wil-h3 {
+    font-size: 18px;
+}
+
+.wil-h4 {
+    font-size: 17px;
+}
+
+.wil-h5 {
+    font-size: 16px;
+}
+
+.wil-context {
+    font-size: 13px;
+}
+
+/* Common */
+
+/* Index */
+
+.index-title {
+    top: 40%;
+    font-size: 50px;
+}
+
+.index-subtitle {
+    top: 47%;
+    font-size: 30px;
+}
+/* Index */
+
+/* About */
+
+#about-photo {
+    padding: 20px;
+    padding-top: 0px;
+}
+    
+.about-side-section {
+    margin-bottom: 15px;
+}
+
+.about-side-section-title {
+    padding: 0px 0px 20px 0px;
+}
+    
+.about-middle-section-content {
+    padding: 160px 40px 80px 40px;
+}
+    
+/* About */
+
+/* Contact */
+    
+.contact-middle-section-title {
+    font-size: 25px;
+}
+
+.contact-middle-section-subtitle {
+    font-size: 20px;
+}
+
+.contact-section-content {
+    text-align: center;
+    padding: 20px;
+}
+/* Contact */
+    
+/* Portfolio */
+.portfolio-section-title {
+    padding: 10px 80px;
+}    
+    
+.portfolio-project-section {
+    height: 120px;
+    border-radius: 10px;
+}
+    
+.portfolio-project-background {
+    background-size: auto 120px;
+}
+    
+
+/* Portfolio */
+}
