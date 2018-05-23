@@ -154,7 +154,7 @@ footer {
 }
 
 .wil-context {
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .close {
@@ -190,6 +190,10 @@ footer {
 
 .index-video-wrap video {
     height: 100%;
+}
+
+.index-video-wrap iframe, .video-container object, .video-container embed {
+	height:100%;
 }
 
 .index-overlay {
@@ -377,7 +381,7 @@ footer {
 }
 
 #portfolio-banner {
-    background-image: url(/img/about-intro3.jpg);
+    background-image: url(/portfolio/hourglass/Screenshot2.jpg);
     background-position: center top;
 }
 
@@ -492,6 +496,7 @@ footer {
 /* Portfolio BackGrounds */
 
 #portfolio-Forest {
+    background-image: url(/portfolio/forest/Intro-thin.jpg);
 }
 
 #portfolio-Pinka {
@@ -511,7 +516,7 @@ footer {
 }
 
 #portfolio-Hourglass {
-    
+    background-image: url(/portfolio/hourglass/Intro-thin.jpg);
 }
 
 #portfolio-IJWtC{

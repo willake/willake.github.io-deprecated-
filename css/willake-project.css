@@ -86,6 +86,10 @@
     padding: 10px 0;
 }
 
+.project-description-download div {
+    padding: 20px 0;
+}
+
 .project-description-download a{
     background-color: #0b2027;
     padding: 10px;
@@ -115,6 +119,14 @@
 
 #project-i-just-want-to-cook {
     background-image: url(/portfolio/i-just-want-to-cook/Intro.jpg);
+}
+
+#project-hourglass {
+    background-image: url(/portfolio/hourglass/Screenshot4.jpg);
+}
+
+#project-forest {
+    background-image: url(/portfolio/forest/Intro.jpg);
 }
 
 @media screen and (min-width: 768px) { 
