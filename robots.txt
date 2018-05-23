@@ -1,4 +1,5 @@
-# robots.txt for http://www.willake.me/
+# robots.txt for https://www.willake.me/
 
 User-agent: *
 Disallow: /portfolio/template/
+sitemap: https://www.willake.me/sitemap.xml
