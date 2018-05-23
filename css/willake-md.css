@@ -100,6 +100,10 @@ footer {
 /* Common */
 
 /* Index */
+    
+    .index-video-wrap  {
+        bottom: 110px;
+    }
 
 .index-video-wrap video {
     height: auto;
