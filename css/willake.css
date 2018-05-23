@@ -211,6 +211,8 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 30px;
+    margin: 0;
+    padding: 0;
     top: 40%;
     cursor: default;
     z-index: 2;
@@ -225,6 +227,8 @@ footer {
     letter-spacing: 1px;
     cursor: default;
     z-index: 2;
+    margin: 0;
+    padding: 0;
 }
 
 /* Index */
@@ -281,6 +285,7 @@ footer {
 .about-middle-section-content {
     position: absolute;
     width: 100%;
+    margin: 0;
     padding: 160px 30px 80px 30px;
     text-align: center;
     z-index: 2;
@@ -301,6 +306,7 @@ footer {
 }
 
 .about-experience-section {
+    margin: 0;
     padding: 20px 0;
 }
 
@@ -308,14 +314,17 @@ footer {
 }
 
 .about-experience-section-content-title {
+    margin: 0;
     padding: 10px 0;
 }
 
 .about-experience-section-content-subtitle {
+    margin: 0;
     padding: 5px 0;
     font-weight: 700;
 }
 .about-experience-section-content-context {
+    margin: 0;
     padding: 10px 0;
 }
 
