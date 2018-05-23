@@ -91,6 +91,7 @@
 }
 
 .project-description-download a{
+    cursor: pointer;
     background-color: #0b2027;
     padding: 10px;
     border-radius: 5px;
