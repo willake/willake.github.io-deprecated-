@@ -78,7 +78,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 110px;
     background-color: #0b2027;
     color: white;
     text-align: center;
@@ -86,13 +86,12 @@ footer {
 }
 
 .footer-copyright {
-    margin-top:15px;
+    margin-top:10px;
     font-size: 12px;
 }
 
 .footer-contact {
-    margin: 10px 0 0 0;
-    /*height: 40px;*/
+    margin: 15px 0 0 0;
 }
 
 .footer-contact a {
