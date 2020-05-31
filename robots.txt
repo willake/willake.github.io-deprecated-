@@ -1,4 +1,4 @@
 User-agent: *
 Allow: *
-Sitemap: https://www.willake.me//sitemap.xml
-Host: https://www.willake.me
+Sitemap: https://hui-en.me//sitemap.xml
+Host: https://hui-en.me
